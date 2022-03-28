@@ -4,7 +4,7 @@ export default async function createPostConstructor(req, res) {
   try {
     const post = await Post.create(req.body);
 
-    return res.send({ post });
+    return res.json({ post });
   } catch (err) {
     return res.status(400).send({ message: err.message });
   }
