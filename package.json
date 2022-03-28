@@ -1,0 +1,11 @@
+{
+  "name": "nodecrud",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "git@github.com:ysmello/nodecrud.git",
+  "author": "Yuri Mello <yuridemeello@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
