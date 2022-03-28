@@ -1,9 +1,9 @@
 import express from 'express';
 
-import posts from './posts';
+import routerPosts from './posts';
 
 const app = express();
 
-app.use('/api', posts);
+app.use('/api', routerPosts);
 
 export default app;
