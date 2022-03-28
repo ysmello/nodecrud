@@ -2,7 +2,9 @@ import Post from '../../models/post';
 
 export default async function updatePostController(req, res) {
   try {
-    const findedPost = await Post.findOneAndUpdate({ id }, req.body, {
+    const { id } = req.params;
+
+    const findedPost = await Post.findByIdAndUpdate(id, req.body, {
       new: true,
     });
 
