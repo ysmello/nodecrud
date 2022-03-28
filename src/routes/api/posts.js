@@ -11,7 +11,7 @@ import {
 const router = Router();
 
 router.post('/posts', createPostController);
-router.get('/posts', getPostsController);
+router.get('/posts/:page/:limit', getPostsController);
 router.get('/posts/:id', findOnePostController);
 router.put('/posts/:id', updatePostController);
 router.delete('/posts/:id', deletePostController);

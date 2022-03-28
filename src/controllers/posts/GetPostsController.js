@@ -2,7 +2,11 @@ import Post from '../../models/post';
 
 export async function getPostsController(req, res) {
   try {
-    const posts = await Post.find();
+    const { limit, page } = req.params;
+
+    const posts = await Post.find()
+      .limit(limit)
+      .skip(limit * page);
 
     return res.send({ posts });
   } catch (err) {
