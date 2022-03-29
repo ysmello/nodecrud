@@ -7,6 +7,10 @@
 - Conceito RestFul;
 - MongoDb;
 - Mongoose ~6.x;
+- Joi
+- node-uuid
+- jsonwebtoken
+- dotenv
 - JSON data (para retornar os dados);
 - Insominia (testar a API criada);
 
