@@ -1,7 +1,8 @@
 import mongoose from '../database';
+import uuid from 'node-uuid';
 
 const PostSchema = new mongoose.Schema({
-  id: { type: mongoose.Types.ObjectId },
+  _id: { type: String, default: uuid.v1 },
   title: { type: String, required: true },
   body: { type: String, required: true },
   tags: { type: Array, required: true },

@@ -16,7 +16,8 @@
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.4.1",
-    "mongoose": "^6.2.9"
+    "mongoose": "^6.2.9",
+    "node-uuid": "^1.4.8"
   },
   "devDependencies": {
     "jest": "^27.5.1"
