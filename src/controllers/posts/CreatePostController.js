@@ -1,6 +1,6 @@
 import Post from '../../models/post';
 
-export default async function createPostConstructor(req, res) {
+export default async function createPostController(req, res) {
   try {
     const post = await Post.create(req.body);
 
